@@ -8,23 +8,3 @@
 
 
 @crawled = {}
-
-#Patch Mechanize::Page with methods we can use to get assets and links
-class Mechanize::Page
-  def get_assets
-    #TODO: write this.  will get absolute URLs of assets on the page.
-  end
-
-  def get_links
-    #We loop through all the links and return an array of unique absolute hrefs
-    links = []
-
-    self.links.each do |link|
-      links << (self.uri.merge page.links.first.uri).to_s if link.uri
-    end
-
-    links.uniq!
-
-  end
-
-end
