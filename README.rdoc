@@ -6,3 +6,4 @@ Synchronous web crawler written in Ruby.
 - Threading or queueing so it can go faster
 - Limits on the depth of the crawl, to avoid endless spider traps.
 - Better duplication avoidance (e.g. www vs not).
+- Offline tests (save a wget crawl of the site, and use Fakeweb during tests) to avoid hitting the site live during tests.
