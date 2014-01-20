@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'mechanize'
 gem 'domainatrix'
 gem 'fakeweb'
